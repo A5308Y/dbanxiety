@@ -6,6 +6,7 @@ ruby "3.2.0"
 gem "rails"
 gem "sprockets-rails"
 gem "puma"
+gem "pg"
 
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
