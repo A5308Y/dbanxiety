@@ -2,13 +2,16 @@
 
 <h1>Orders</h1>
 
-<div id="orders">
+<table>
+  <tr>
+    <th>Price</th>
+    <th>Description</th>
+    <th>Line item price</th>
+    <th>References</th>
+  </tr>
   <% @orders.each do |order| %>
     <%= render order %>
-    <p>
-      <%= link_to "Show this order", order %>
-    </p>
   <% end %>
-</div>
+</table>
 
 <%= link_to "New order", new_order_path %>

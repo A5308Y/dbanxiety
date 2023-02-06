@@ -3,7 +3,8 @@ class OrdersController < ApplicationController
 
   # GET /orders
   def index
-    @orders = Order.all
+    @orders = Order.includes(line_items: :references)
+    # @orders = Order.all
   end
 
   # GET /orders/1

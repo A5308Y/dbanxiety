@@ -1,12 +1,14 @@
-<div id="<%= dom_id order %>">
-  <p>
-    <strong>Price:</strong>
+<tr id="<%= dom_id order %>">
+  <td>
     <%= order.price %>
-  </p>
-
-  <p>
-    <strong>Description:</strong>
+  </td>
+  <td>
     <%= order.description %>
-  </p>
-
-</div>
+  </td>
+  <td>
+    <%= order.line_item_price_ruby %>
+  </td>
+  <td>
+    <%= order.high_value_references_ruby %>
+  </td>
+</tr>
